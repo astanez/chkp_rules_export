@@ -1,0 +1,354 @@
+{
+  "uid" : "70337cca-18bd-4cb2-afd6-d15d124825ba",
+  "name" : "Automation_Test_Policy Network",
+  "rulebase" : [ {
+    "uid" : "0bd03938-dc34-44b3-a04a-cbf4c55cb252",
+    "name" : "RID 1 First rule",
+    "type" : "access-rule",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "rule-number" : 1,
+    "track" : {
+      "type" : "598ead32-aa42-4615-90ed-f51a5928d41d",
+      "per-session" : false,
+      "per-connection" : true,
+      "accounting" : false,
+      "enable-firewall-session" : false,
+      "alert" : "none"
+    },
+    "source-ranges" : {
+      "ipv4" : [ {
+        "start" : "123.123.1.2",
+        "end" : "123.123.1.2"
+      }, {
+        "start" : "123.123.1.1",
+        "end" : "123.123.1.1"
+      } ],
+      "ipv6" : [ ],
+      "others" : [ ],
+      "excluded-others" : [ ]
+    },
+    "destination-ranges" : {
+      "ipv4" : [ {
+        "start" : "0.0.0.0",
+        "end" : "255.255.255.255"
+      } ],
+      "ipv6" : [ {
+        "start" : "0:0:0:0:0:0:0:0",
+        "end" : "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+      } ],
+      "others" : [ ],
+      "excluded-others" : [ ]
+    },
+    "service-ranges" : {
+      "tcp" : [ ],
+      "udp" : [ ],
+      "others" : [ "1fcbf730-29cb-415b-9efb-3835a3341ad2", "36610602-328e-4c25-938a-03e8ecbdcc60" ],
+      "excluded-others" : [ ]
+    },
+    "vpn" : [ "97aeb369-9aea-11d5-bd16-0090272ccb30" ],
+    "action" : "6c488338-8eec-4103-ad21-cd461ac2c472",
+    "action-settings" : {
+      "enable-identity-captive-portal" : false
+    },
+    "content" : [ "97aeb369-9aea-11d5-bd16-0090272ccb30" ],
+    "content-negate" : false,
+    "content-direction" : "any",
+    "time" : [ "97aeb369-9aea-11d5-bd16-0090272ccb30" ],
+    "custom-fields" : {
+      "field-1" : "",
+      "field-2" : "",
+      "field-3" : ""
+    },
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1595737102080,
+        "iso-8601" : "2020-07-26T06:18+0200"
+      },
+      "last-modifier" : "techuser",
+      "creation-time" : {
+        "posix" : 1595737100743,
+        "iso-8601" : "2020-07-26T06:18+0200"
+      },
+      "creator" : "techuser"
+    },
+    "comments" : "",
+    "enabled" : true,
+    "install-on" : [ "6c488338-8eec-4103-ad21-cd461ac2c476" ]
+  }, {
+    "uid" : "46235367-1579-42db-bb00-fc7af2714410",
+    "name" : "RID 2 First rule",
+    "type" : "access-rule",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "rule-number" : 2,
+    "track" : {
+      "type" : "598ead32-aa42-4615-90ed-f51a5928d41d",
+      "per-session" : false,
+      "per-connection" : true,
+      "accounting" : false,
+      "enable-firewall-session" : false,
+      "alert" : "none"
+    },
+    "source-ranges" : {
+      "ipv4" : [ {
+        "start" : "123.123.1.2",
+        "end" : "123.123.1.2"
+      }, {
+        "start" : "123.123.1.1",
+        "end" : "123.123.1.1"
+      } ],
+      "ipv6" : [ ],
+      "others" : [ ],
+      "excluded-others" : [ ]
+    },
+    "destination-ranges" : {
+      "ipv4" : [ {
+        "start" : "0.0.0.0",
+        "end" : "255.255.255.255"
+      } ],
+      "ipv6" : [ {
+        "start" : "0:0:0:0:0:0:0:0",
+        "end" : "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+      } ],
+      "others" : [ ],
+      "excluded-others" : [ ]
+    },
+    "service-ranges" : {
+      "tcp" : [ ],
+      "udp" : [ ],
+      "others" : [ "18ec9eaa-1657-4240-ab97-5f234623336b" ],
+      "excluded-others" : [ ]
+    },
+    "vpn" : [ "97aeb369-9aea-11d5-bd16-0090272ccb30" ],
+    "action" : "6c488338-8eec-4103-ad21-cd461ac2c472",
+    "action-settings" : {
+      "enable-identity-captive-portal" : false
+    },
+    "content" : [ "97aeb369-9aea-11d5-bd16-0090272ccb30" ],
+    "content-negate" : false,
+    "content-direction" : "any",
+    "time" : [ "97aeb369-9aea-11d5-bd16-0090272ccb30" ],
+    "custom-fields" : {
+      "field-1" : "",
+      "field-2" : "",
+      "field-3" : ""
+    },
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1595737119618,
+        "iso-8601" : "2020-07-26T06:18+0200"
+      },
+      "last-modifier" : "techuser",
+      "creation-time" : {
+        "posix" : 1595737118359,
+        "iso-8601" : "2020-07-26T06:18+0200"
+      },
+      "creator" : "techuser"
+    },
+    "comments" : "",
+    "enabled" : true,
+    "install-on" : [ "6c488338-8eec-4103-ad21-cd461ac2c476" ]
+  }, {
+    "uid" : "8360863a-2e17-492a-a7bb-45149d7db181",
+    "name" : "Cleanup rule",
+    "type" : "access-rule",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "rule-number" : 3,
+    "track" : {
+      "type" : "29e53e3d-23bf-48fe-b6b1-d59bd88036f9",
+      "per-session" : false,
+      "per-connection" : false,
+      "accounting" : false,
+      "enable-firewall-session" : false,
+      "alert" : "none"
+    },
+    "source-ranges" : {
+      "ipv4" : [ {
+        "start" : "0.0.0.0",
+        "end" : "255.255.255.255"
+      } ],
+      "ipv6" : [ {
+        "start" : "0:0:0:0:0:0:0:0",
+        "end" : "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+      } ],
+      "others" : [ ],
+      "excluded-others" : [ ]
+    },
+    "destination-ranges" : {
+      "ipv4" : [ {
+        "start" : "0.0.0.0",
+        "end" : "255.255.255.255"
+      } ],
+      "ipv6" : [ {
+        "start" : "0:0:0:0:0:0:0:0",
+        "end" : "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+      } ],
+      "others" : [ ],
+      "excluded-others" : [ ]
+    },
+    "service-ranges" : {
+      "tcp" : [ {
+        "start" : "0",
+        "end" : "65535"
+      } ],
+      "udp" : [ {
+        "start" : "0",
+        "end" : "65535"
+      } ],
+      "others" : [ ],
+      "excluded-others" : [ ]
+    },
+    "vpn" : [ "97aeb369-9aea-11d5-bd16-0090272ccb30" ],
+    "action" : "6c488338-8eec-4103-ad21-cd461ac2c473",
+    "action-settings" : { },
+    "content" : [ "97aeb369-9aea-11d5-bd16-0090272ccb30" ],
+    "content-negate" : false,
+    "content-direction" : "any",
+    "time" : [ "97aeb369-9aea-11d5-bd16-0090272ccb30" ],
+    "custom-fields" : {
+      "field-1" : "",
+      "field-2" : "",
+      "field-3" : ""
+    },
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1595737055770,
+        "iso-8601" : "2020-07-26T06:17+0200"
+      },
+      "last-modifier" : "techuser",
+      "creation-time" : {
+        "posix" : 1595737055770,
+        "iso-8601" : "2020-07-26T06:17+0200"
+      },
+      "creator" : "techuser"
+    },
+    "comments" : "",
+    "enabled" : true,
+    "install-on" : [ "6c488338-8eec-4103-ad21-cd461ac2c476" ]
+  } ],
+  "objects-dictionary" : [ {
+    "uid" : "6c488338-8eec-4103-ad21-cd461ac2c472",
+    "name" : "Accept",
+    "type" : "RulebaseAction",
+    "domain" : {
+      "uid" : "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+      "name" : "Check Point Data",
+      "domain-type" : "data domain"
+    }
+  }, {
+    "uid" : "97aeb369-9aea-11d5-bd16-0090272ccb30",
+    "name" : "Any",
+    "type" : "CpmiAnyObject",
+    "domain" : {
+      "uid" : "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+      "name" : "Check Point Data",
+      "domain-type" : "data domain"
+    }
+  }, {
+    "uid" : "6c488338-8eec-4103-ad21-cd461ac2c473",
+    "name" : "Drop",
+    "type" : "RulebaseAction",
+    "domain" : {
+      "uid" : "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+      "name" : "Check Point Data",
+      "domain-type" : "data domain"
+    }
+  }, {
+    "uid" : "598ead32-aa42-4615-90ed-f51a5928d41d",
+    "name" : "Log",
+    "type" : "Track",
+    "domain" : {
+      "uid" : "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+      "name" : "Check Point Data",
+      "domain-type" : "data domain"
+    }
+  }, {
+    "uid" : "29e53e3d-23bf-48fe-b6b1-d59bd88036f9",
+    "name" : "None",
+    "type" : "Track",
+    "domain" : {
+      "uid" : "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+      "name" : "Check Point Data",
+      "domain-type" : "data domain"
+    }
+  }, {
+    "uid" : "6c488338-8eec-4103-ad21-cd461ac2c476",
+    "name" : "Policy Targets",
+    "type" : "Global",
+    "domain" : {
+      "uid" : "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+      "name" : "Check Point Data",
+      "domain-type" : "data domain"
+    }
+  }, {
+    "uid" : "18ec9eaa-1657-4240-ab97-5f234623336b",
+    "name" : "ssh",
+    "type" : "service-tcp",
+    "domain" : {
+      "uid" : "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+      "name" : "Check Point Data",
+      "domain-type" : "data domain"
+    },
+    "port" : "22"
+  }, {
+    "uid" : "1fcbf730-29cb-415b-9efb-3835a3341ad2",
+    "name" : "tcp_11111",
+    "type" : "service-tcp",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "port" : "11111"
+  }, {
+    "uid" : "ae827fab-a122-461e-970f-eb8137a297ea",
+    "name" : "test_host_automation",
+    "type" : "host",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "ipv4-address" : "123.123.1.1"
+  }, {
+    "uid" : "0995fc4f-305a-4233-9277-78c0bf6b368b",
+    "name" : "test_host_automation2",
+    "type" : "host",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "ipv4-address" : "123.123.1.2"
+  }, {
+    "uid" : "36610602-328e-4c25-938a-03e8ecbdcc60",
+    "name" : "udp_10123",
+    "type" : "service-udp",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "port" : "10123"
+  } ],
+  "from" : 1,
+  "to" : 3,
+  "total" : 3
+}

@@ -1,0 +1,1127 @@
+{
+  "objects" : [ {
+    "uid" : "6c6b2862-917b-4b82-896f-1d0bf5e072c6",
+    "name" : "CMA1_Server",
+    "type" : "CpmiHostCkp",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Open server",
+    "version" : "R80.20",
+    "ipv4-address" : "192.168.168.12",
+    "network-security-blades" : { },
+    "management-blades" : {
+      "network-policy-management" : true,
+      "logging-and-status" : true
+    },
+    "sic-status" : "communicating",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/CheckPoint/Hosts/xHost_CP",
+    "groups" : [ ],
+    "comments" : "Domain Management Server",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "locked by other session",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1578399290021,
+        "iso-8601" : "2020-01-07T13:14+0100"
+      },
+      "last-modifier" : "System",
+      "creation-time" : {
+        "posix" : 1578399261008,
+        "iso-8601" : "2020-01-07T13:14+0100"
+      },
+      "creator" : "admin"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "90ff5767-2051-224f-832e-2ddee34e0729",
+    "name" : "gw12_main_vs",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "1.1.1.80",
+    "interfaces" : [ {
+      "interface-name" : "eth1.80",
+      "ipv4-address" : "1.1.1.80",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_gw12_main_vs", "vsx_cl3_m2_gw12_main_vs" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1591122171177,
+        "iso-8601" : "2020-06-02T20:22+0200"
+      },
+      "last-modifier" : "admin3",
+      "creation-time" : {
+        "posix" : 1591122120261,
+        "iso-8601" : "2020-06-02T20:22+0200"
+      },
+      "creator" : "admin3"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "6925700f-15a5-9142-9c54-8997a40b9924",
+    "name" : "gw14_main_vs",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "1.1.2.14",
+    "interfaces" : [ {
+      "interface-name" : "eth1.81",
+      "ipv4-address" : "1.1.2.14",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_gw14_main_vs", "vsx_cl3_m2_gw14_main_vs" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1591442834070,
+        "iso-8601" : "2020-06-06T13:27+0200"
+      },
+      "last-modifier" : "admin3",
+      "creation-time" : {
+        "posix" : 1591441878305,
+        "iso-8601" : "2020-06-06T13:11+0200"
+      },
+      "creator" : "admin3"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "b82fc372-4f30-418e-a612-f302eb3b8be7",
+    "name" : "gw6_cma1_vs",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "10.0.21.5",
+    "interfaces" : [ {
+      "interface-name" : "eth1.21",
+      "ipv4-address" : "10.0.21.5",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_gw6_cma1_vs", "vsx_cl3_m2_gw6_cma1_vs" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1584435182193,
+        "iso-8601" : "2020-03-17T09:53+0100"
+      },
+      "last-modifier" : "admin2",
+      "creation-time" : {
+        "posix" : 1584435142100,
+        "iso-8601" : "2020-03-17T09:52+0100"
+      },
+      "creator" : "admin2"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "44d23cb6-996f-b64e-9cd1-31e323a1eb71",
+    "name" : "gw7_cma1_vs",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "1.1.1.70",
+    "interfaces" : [ {
+      "interface-name" : "eth1.70",
+      "ipv4-address" : "1.1.1.70",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_gw7_cma1_vs", "vsx_cl3_m2_gw7_cma1_vs" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ {
+      "uid" : "1dbc3282-88bc-4e25-95ef-05901bd28d7e",
+      "name" : "MyNetGroup",
+      "type" : "group",
+      "domain" : {
+        "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+        "name" : "CMA1",
+        "domain-type" : "domain"
+      },
+      "members" : [ "44d23cb6-996f-b64e-9cd1-31e323a1eb71", "4566f138-fd01-4f1e-b81e-7a0b89864773" ],
+      "groups" : [ ],
+      "comments" : "",
+      "color" : "black",
+      "icon" : "General/group",
+      "tags" : [ ],
+      "meta-info" : {
+        "lock" : "unlocked",
+        "validation-state" : "ok",
+        "last-modify-time" : {
+          "posix" : 1606238068525,
+          "iso-8601" : "2020-11-24T18:14+0100"
+        },
+        "last-modifier" : "admin",
+        "creation-time" : {
+          "posix" : 1606238068525,
+          "iso-8601" : "2020-11-24T18:14+0100"
+        },
+        "creator" : "admin"
+      },
+      "read-only" : false
+    } ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1591115532323,
+        "iso-8601" : "2020-06-02T18:32+0200"
+      },
+      "last-modifier" : "admin3",
+      "creation-time" : {
+        "posix" : 1591115458043,
+        "iso-8601" : "2020-06-02T18:30+0200"
+      },
+      "creator" : "admin3"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "52866db2-7687-ee46-b93e-4e5a6f0f3786",
+    "name" : "gw90_main_vs",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "1.1.1.90",
+    "interfaces" : [ {
+      "interface-name" : "eth1.90",
+      "ipv4-address" : "1.1.1.90",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_gw90_main_vs", "vsx_cl3_m2_gw90_main_vs" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1591122505504,
+        "iso-8601" : "2020-06-02T20:28+0200"
+      },
+      "last-modifier" : "robot",
+      "creation-time" : {
+        "posix" : 1591122442005,
+        "iso-8601" : "2020-06-02T20:27+0200"
+      },
+      "creator" : "robot"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "c650f035-218b-6940-9e32-b6f54970d31e",
+    "name" : "gw91_main_vs",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "1.1.1.91",
+    "interfaces" : [ {
+      "interface-name" : "eth1.91",
+      "ipv4-address" : "1.1.1.91",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_gw91_main_vs", "vsx_cl3_m2_gw91_main_vs" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1591123043510,
+        "iso-8601" : "2020-06-02T20:37+0200"
+      },
+      "last-modifier" : "robot",
+      "creation-time" : {
+        "posix" : 1591122971237,
+        "iso-8601" : "2020-06-02T20:36+0200"
+      },
+      "creator" : "robot"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "190a057b-b677-4e1d-9b26-62a1f503bfca",
+    "name" : "GWR8010",
+    "type" : "simple-gateway",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : {
+      "access-policy-revision" : {
+        "uid" : "1ed48c80-769a-4b02-b031-0185a624c419",
+        "name" : "admin@5/27/2020",
+        "type" : "session",
+        "domain" : {
+          "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+          "name" : "CMA1",
+          "domain-type" : "domain"
+        },
+        "state" : "published",
+        "user-name" : "admin",
+        "description" : "",
+        "last-login-time" : {
+          "posix" : 1588818429159,
+          "iso-8601" : "2020-05-07T04:27+0200"
+        },
+        "publish-time" : {
+          "posix" : 1588818726913,
+          "iso-8601" : "2020-05-07T04:32+0200"
+        },
+        "expired-session" : false,
+        "application" : "SmartConsole",
+        "changes" : 0,
+        "in-work" : false,
+        "ip-address" : "192.168.168.1",
+        "locks" : 0,
+        "email" : "",
+        "phone-number" : "",
+        "connection-mode" : "read write",
+        "session-timeout" : 600,
+        "comments" : "",
+        "color" : "black",
+        "icon" : "Objects/worksession",
+        "tags" : [ ],
+        "meta-info" : {
+          "lock" : "unlocked",
+          "validation-state" : "ok",
+          "last-modify-time" : {
+            "posix" : 1588818726084,
+            "iso-8601" : "2020-05-07T04:32+0200"
+          },
+          "last-modifier" : "admin",
+          "creation-time" : {
+            "posix" : 1588818429259,
+            "iso-8601" : "2020-05-07T04:27+0200"
+          },
+          "creator" : "admin"
+        },
+        "read-only" : false
+      },
+      "access-policy-installed" : true,
+      "access-policy-name" : "Policy_GWR8010",
+      "access-policy-installation-date" : {
+        "posix" : 1588818760087,
+        "iso-8601" : "2020-05-07T04:32+0200"
+      },
+      "threat-policy-installed" : false
+    },
+    "operating-system" : "Gaia",
+    "hardware" : "Open server",
+    "version" : "R80.10",
+    "ipv4-address" : "192.168.168.101",
+    "interfaces" : [ {
+      "interface-name" : "eth0",
+      "ipv4-address" : "192.168.168.101",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : true
+      }
+    }, {
+      "interface-name" : "eth1",
+      "ipv4-address" : "10.0.0.101",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true,
+      "identity-awareness" : true,
+      "monitoring" : true
+    },
+    "management-blades" : { },
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "communicating",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/gateway",
+    "groups" : [ ],
+    "comments" : "tag1,tag2, fadsfa dsa a  aafsdfaf        ",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1595866521477,
+        "iso-8601" : "2020-07-27T18:15+0200"
+      },
+      "last-modifier" : "admin",
+      "creation-time" : {
+        "posix" : 1578408178163,
+        "iso-8601" : "2020-01-07T15:42+0100"
+      },
+      "creator" : "admin"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "358f3dd3-425d-4bcc-ae34-4747ef338e0c",
+    "name" : "sg100CMA1",
+    "type" : "simple-gateway",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Open server",
+    "version" : "R80",
+    "ipv4-address" : "192.168.233.201",
+    "interfaces" : [ {
+      "interface-name" : "eth0",
+      "ipv4-address" : "192.168.233.201",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : true
+      }
+    }, {
+      "interface-name" : "eth1",
+      "ipv4-address" : "10.101.1.101",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : true
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true,
+      "application-control" : true,
+      "url-filtering" : true,
+      "anti-bot" : true,
+      "anti-virus" : true,
+      "ips" : true
+    },
+    "management-blades" : { },
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "initialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/gateway",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "blue",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1584366444859,
+        "iso-8601" : "2020-03-16T14:47+0100"
+      },
+      "last-modifier" : "admin2",
+      "creation-time" : {
+        "posix" : 1584366425441,
+        "iso-8601" : "2020-03-16T14:47+0100"
+      },
+      "creator" : "admin2"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "7cebf4e9-bdb2-3648-840f-e93f8393d05c",
+    "name" : "vs_gw_130_cma1",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : {
+      "cluster-members-access-policy-revision" : [ ],
+      "access-policy-installed" : true,
+      "access-policy-name" : "Automation_Test_Policy",
+      "access-policy-installation-date" : {
+        "posix" : 1595719659438,
+        "iso-8601" : "2020-07-26T01:27+0200"
+      },
+      "threat-policy-installed" : false
+    },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "10.0.132.1",
+    "interfaces" : [ {
+      "interface-name" : "eth1.132",
+      "ipv4-address" : "10.0.132.1",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_vs_gw_130_cma1", "vsx_cl3_m2_vs_gw_130_cma1" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1595712340757,
+        "iso-8601" : "2020-07-25T23:25+0200"
+      },
+      "last-modifier" : "techuser",
+      "creation-time" : {
+        "posix" : 1595709302249,
+        "iso-8601" : "2020-07-25T22:35+0200"
+      },
+      "creator" : "techuser"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "3f517095-6a4c-0b4e-a0ca-fb815ca4955d",
+    "name" : "vs_gw_140_cma1",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "10.0.140.1",
+    "interfaces" : [ {
+      "interface-name" : "eth1.140",
+      "ipv4-address" : "10.0.140.1",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_vs_gw_140_cma1", "vsx_cl3_m2_vs_gw_140_cma1" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1595833714322,
+        "iso-8601" : "2020-07-27T09:08+0200"
+      },
+      "last-modifier" : "techuser",
+      "creation-time" : {
+        "posix" : 1595833603216,
+        "iso-8601" : "2020-07-27T09:06+0200"
+      },
+      "creator" : "techuser"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "09a96333-55c1-5e4c-96f8-abc7894acd4f",
+    "name" : "vs_gw_141_cma1",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "10.0.141.1",
+    "interfaces" : [ {
+      "interface-name" : "eth1.141",
+      "ipv4-address" : "10.0.141.1",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_vs_gw_141_cma1", "vsx_cl3_m2_vs_gw_141_cma1" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1595833950571,
+        "iso-8601" : "2020-07-27T09:12+0200"
+      },
+      "last-modifier" : "techuser",
+      "creation-time" : {
+        "posix" : 1595833841370,
+        "iso-8601" : "2020-07-27T09:10+0200"
+      },
+      "creator" : "techuser"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "5cf787a7-2129-474d-890c-f4b785cfedc6",
+    "name" : "vs_gw_150",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "10.0.150.1",
+    "interfaces" : [ {
+      "interface-name" : "eth1.150",
+      "ipv4-address" : "10.0.150.1",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_vs_gw_150", "vsx_cl3_m2_vs_gw_150" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1600514787290,
+        "iso-8601" : "2020-09-19T13:26+0200"
+      },
+      "last-modifier" : "techuser",
+      "creation-time" : {
+        "posix" : 1600514724242,
+        "iso-8601" : "2020-09-19T13:25+0200"
+      },
+      "creator" : "techuser"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "082e291e-c4ba-d143-8dba-72b3d6462f1f",
+    "name" : "vs_gw_151",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "10.0.151.1",
+    "interfaces" : [ {
+      "interface-name" : "eth1.151",
+      "ipv4-address" : "10.0.151.1",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_vs_gw_151", "vsx_cl3_m2_vs_gw_151" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1600514926051,
+        "iso-8601" : "2020-09-19T13:28+0200"
+      },
+      "last-modifier" : "techuser",
+      "creation-time" : {
+        "posix" : 1600514867828,
+        "iso-8601" : "2020-09-19T13:27+0200"
+      },
+      "creator" : "techuser"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "fae5b8b7-3177-ae4c-bf3b-9f6f3b1d8f95",
+    "name" : "vs_gw_160",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "10.0.160.1",
+    "interfaces" : [ {
+      "interface-name" : "eth1.160",
+      "ipv4-address" : "10.0.160.1",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_vs_gw_160", "vsx_cl3_m2_vs_gw_160" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1600531292376,
+        "iso-8601" : "2020-09-19T18:01+0200"
+      },
+      "last-modifier" : "techuser",
+      "creation-time" : {
+        "posix" : 1600531124075,
+        "iso-8601" : "2020-09-19T17:58+0200"
+      },
+      "creator" : "techuser"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "3be25701-a127-2144-8bc5-209e6f74e9d6",
+    "name" : "vs_gw_161",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "10.0.161.1",
+    "interfaces" : [ {
+      "interface-name" : "eth1.161",
+      "ipv4-address" : "10.0.161.1",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_vs_gw_161", "vsx_cl3_m2_vs_gw_161" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1600532368159,
+        "iso-8601" : "2020-09-19T18:19+0200"
+      },
+      "last-modifier" : "techuser",
+      "creation-time" : {
+        "posix" : 1600532209766,
+        "iso-8601" : "2020-09-19T18:16+0200"
+      },
+      "creator" : "techuser"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "a76ef1b2-9c1a-0545-bb39-44dc4f1d2ac1",
+    "name" : "vs_gw_162",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "10.0.162.1",
+    "interfaces" : [ {
+      "interface-name" : "eth1.162",
+      "ipv4-address" : "10.0.162.1",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_vs_gw_162", "vsx_cl3_m2_vs_gw_162" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1600583544769,
+        "iso-8601" : "2020-09-20T08:32+0200"
+      },
+      "last-modifier" : "techuser",
+      "creation-time" : {
+        "posix" : 1600583346406,
+        "iso-8601" : "2020-09-20T08:29+0200"
+      },
+      "creator" : "techuser"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "190bb3b2-22af-184b-886f-4151f49f550c",
+    "name" : "vs_gw_163",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : { },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "10.0.163.1",
+    "interfaces" : [ {
+      "interface-name" : "eth1.163",
+      "ipv4-address" : "10.0.163.1",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_vs_gw_163", "vsx_cl3_m2_vs_gw_163" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1600583997819,
+        "iso-8601" : "2020-09-20T08:39+0200"
+      },
+      "last-modifier" : "techuser",
+      "creation-time" : {
+        "posix" : 1600583784693,
+        "iso-8601" : "2020-09-20T08:36+0200"
+      },
+      "creator" : "techuser"
+    },
+    "read-only" : true
+  }, {
+    "uid" : "f6fa706e-afca-514a-a9e8-15028d92a6b9",
+    "name" : "vs_gw_95_cma1",
+    "type" : "CpmiVsClusterNetobj",
+    "domain" : {
+      "uid" : "37f59606-37bd-449d-ac6b-2f1190c80780",
+      "name" : "CMA1",
+      "domain-type" : "domain"
+    },
+    "policy" : {
+      "cluster-members-access-policy-revision" : [ ],
+      "access-policy-installed" : true,
+      "access-policy-name" : "Automation_Test_Policy",
+      "access-policy-installation-date" : {
+        "posix" : 1595625545493,
+        "iso-8601" : "2020-07-24T23:19+0200"
+      },
+      "threat-policy-installed" : false
+    },
+    "operating-system" : "Gaia",
+    "hardware" : "Check Point VSX",
+    "version" : "R80.10",
+    "ipv4-address" : "10.0.0.95",
+    "interfaces" : [ {
+      "interface-name" : "eth1.95",
+      "ipv4-address" : "10.0.0.95",
+      "ipv4-network-mask" : "255.255.255.0",
+      "ipv4-mask-length" : 24,
+      "dynamic-ip" : false,
+      "topology" : {
+        "leads-to-internet" : false,
+        "ip-address-behind-this-interface" : "network defined by the interface ip and net mask",
+        "leads-to-dmz" : false
+      }
+    } ],
+    "network-security-blades" : {
+      "firewall" : true
+    },
+    "management-blades" : { },
+    "cluster-member-names" : [ "vsx_cl3_m1_vs_gw_95_cma1", "vsx_cl3_m2_vs_gw_95_cma1" ],
+    "vpn-encryption-domain" : "addresses_behind_gw",
+    "sic-status" : "uninitialized",
+    "tags" : [ ],
+    "icon" : "NetworkObjects/vsx/vs_clust",
+    "groups" : [ ],
+    "comments" : "",
+    "color" : "black",
+    "meta-info" : {
+      "lock" : "unlocked",
+      "validation-state" : "ok",
+      "last-modify-time" : {
+        "posix" : 1591151016144,
+        "iso-8601" : "2020-06-03T04:23+0200"
+      },
+      "last-modifier" : "robot",
+      "creation-time" : {
+        "posix" : 1591150958263,
+        "iso-8601" : "2020-06-03T04:22+0200"
+      },
+      "creator" : "robot"
+    },
+    "read-only" : true
+  } ],
+  "from" : 1,
+  "to" : 19,
+  "total" : 19
+}

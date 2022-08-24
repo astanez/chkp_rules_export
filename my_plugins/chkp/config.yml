@@ -1,0 +1,13 @@
+
+# For data export from MGMT
+mgmt_port: 443
+data_export_folder: data/for_import/chkp/
+
+database: data/fwPoliciesAnalyser.db
+vendor_name: CHKP
+policy_conv_db_table: policy_package_conversations
+policy_package_zones_db_table: policy_packages_zones
+service_groups_file: service-groups
+
+zones_tag_name: "zones:"
+

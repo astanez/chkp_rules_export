@@ -1,0 +1,810 @@
+{
+    "uid": "626a3ffe-a941-4cb9-8eed-6554e977374a",
+    "name": "NewYourk_DC Network",
+    "rulebase": [
+        {
+            "uid": "37ddb3e8-1d88-4841-968a-0caef537a980",
+            "name": "",
+            "type": "access-rule",
+            "domain": {
+                "uid": "8b0e4294-b2c3-4af9-a047-2a87e5b51aac",
+                "name": "CMA1",
+                "domain-type": "domain"
+            },
+            "rule-number": 1,
+            "track": {
+                "type": "598ead32-aa42-4615-90ed-f51a5928d41d",
+                "per-session": false,
+                "per-connection": true,
+                "accounting": false,
+                "enable-firewall-session": false,
+                "alert": "none"
+            },
+            "source": [
+                "34e7dbcd-5e7c-464d-928b-3340109bbfad"
+            ],
+            "source-negate": false,
+            "destination": [
+                "15c07f09-c515-41d7-8719-fde0bc96d5c4"
+            ],
+            "destination-negate": false,
+            "service": [
+                "97aeb44f-9aea-11d5-bd16-0090272ccb30",
+                "96759a8d-aab8-43d9-bbfc-b459ce66ac87"
+            ],
+            "service-negate": false,
+            "vpn": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "action": "6c488338-8eec-4103-ad21-cd461ac2c472",
+            "action-settings": {
+                "enable-identity-captive-portal": false
+            },
+            "content": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "content-negate": false,
+            "content-direction": "any",
+            "time": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "custom-fields": {
+                "field-1": "",
+                "field-2": "",
+                "field-3": ""
+            },
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1610155057953,
+                    "iso-8601": "2021-01-09T02:17+0100"
+                },
+                "last-modifier": "admin",
+                "creation-time": {
+                    "posix": 1610153275118,
+                    "iso-8601": "2021-01-09T01:47+0100"
+                },
+                "creator": "admin"
+            },
+            "comments": "",
+            "enabled": true,
+            "install-on": [
+                "6c488338-8eec-4103-ad21-cd461ac2c476"
+            ]
+        },
+        {
+            "uid": "b9feb437-2862-401e-92ac-2d063fd1a934",
+            "name": "",
+            "type": "access-rule",
+            "domain": {
+                "uid": "8b0e4294-b2c3-4af9-a047-2a87e5b51aac",
+                "name": "CMA1",
+                "domain-type": "domain"
+            },
+            "rule-number": 2,
+            "track": {
+                "type": "598ead32-aa42-4615-90ed-f51a5928d41d",
+                "per-session": false,
+                "per-connection": true,
+                "accounting": false,
+                "enable-firewall-session": false,
+                "alert": "none"
+            },
+            "source": [
+                "15c07f09-c515-41d7-8719-fde0bc96d5c4"
+            ],
+            "source-negate": false,
+            "destination": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "destination-negate": false,
+            "service": [
+                "97aeb389-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "service-negate": false,
+            "vpn": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "action": "6c488338-8eec-4103-ad21-cd461ac2c472",
+            "action-settings": {
+                "enable-identity-captive-portal": false
+            },
+            "content": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "content-negate": false,
+            "content-direction": "any",
+            "time": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "custom-fields": {
+                "field-1": "",
+                "field-2": "",
+                "field-3": ""
+            },
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1610155147579,
+                    "iso-8601": "2021-01-09T02:19+0100"
+                },
+                "last-modifier": "admin",
+                "creation-time": {
+                    "posix": 1610153273542,
+                    "iso-8601": "2021-01-09T01:47+0100"
+                },
+                "creator": "admin"
+            },
+            "comments": "",
+            "enabled": true,
+            "install-on": [
+                "6c488338-8eec-4103-ad21-cd461ac2c476"
+            ]
+        },
+        {
+            "uid": "e2599b0f-f4fe-41a2-80b7-5c4ae0789ccc",
+            "type": "access-rule",
+            "domain": {
+                "uid": "8b0e4294-b2c3-4af9-a047-2a87e5b51aac",
+                "name": "CMA1",
+                "domain-type": "domain"
+            },
+            "rule-number": 3,
+            "track": {
+                "type": "29e53e3d-23bf-48fe-b6b1-d59bd88036f9",
+                "per-session": false,
+                "per-connection": false,
+                "accounting": false,
+                "enable-firewall-session": false,
+                "alert": "none"
+            },
+            "source": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "source-negate": false,
+            "destination": [
+                "34e7dbcd-5e7c-464d-928b-3340109bbfad"
+            ],
+            "destination-negate": false,
+            "service": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "service-negate": false,
+            "vpn": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "action": "6c488338-8eec-4103-ad21-cd461ac2c473",
+            "action-settings": {},
+            "content": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "content-negate": false,
+            "content-direction": "any",
+            "time": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "custom-fields": {
+                "field-1": "",
+                "field-2": "",
+                "field-3": ""
+            },
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1610155157518,
+                    "iso-8601": "2021-01-09T02:19+0100"
+                },
+                "last-modifier": "admin",
+                "creation-time": {
+                    "posix": 1610155151287,
+                    "iso-8601": "2021-01-09T02:19+0100"
+                },
+                "creator": "admin"
+            },
+            "comments": "",
+            "enabled": true,
+            "install-on": [
+                "6c488338-8eec-4103-ad21-cd461ac2c476"
+            ]
+        },
+        {
+            "uid": "59f62b5a-ae11-49ad-b8df-36c7fba0bd4e",
+            "name": "Cleanup rule",
+            "type": "access-rule",
+            "domain": {
+                "uid": "8b0e4294-b2c3-4af9-a047-2a87e5b51aac",
+                "name": "CMA1",
+                "domain-type": "domain"
+            },
+            "rule-number": 4,
+            "track": {
+                "type": "29e53e3d-23bf-48fe-b6b1-d59bd88036f9",
+                "per-session": false,
+                "per-connection": false,
+                "accounting": false,
+                "enable-firewall-session": false,
+                "alert": "none"
+            },
+            "source": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "source-negate": false,
+            "destination": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "destination-negate": false,
+            "service": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "service-negate": false,
+            "vpn": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "action": "6c488338-8eec-4103-ad21-cd461ac2c473",
+            "action-settings": {},
+            "content": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "content-negate": false,
+            "content-direction": "any",
+            "time": [
+                "97aeb369-9aea-11d5-bd16-0090272ccb30"
+            ],
+            "custom-fields": {
+                "field-1": "",
+                "field-2": "",
+                "field-3": ""
+            },
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1610153245304,
+                    "iso-8601": "2021-01-09T01:47+0100"
+                },
+                "last-modifier": "admin",
+                "creation-time": {
+                    "posix": 1610153245304,
+                    "iso-8601": "2021-01-09T01:47+0100"
+                },
+                "creator": "admin"
+            },
+            "comments": "",
+            "enabled": true,
+            "install-on": [
+                "6c488338-8eec-4103-ad21-cd461ac2c476"
+            ]
+        }
+    ],
+    "objects-dictionary": [
+        {
+            "uid": "6c488338-8eec-4103-ad21-cd461ac2c472",
+            "name": "Accept",
+            "type": "RulebaseAction",
+            "domain": {
+                "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+                "name": "Check Point Data",
+                "domain-type": "data domain"
+            },
+            "color": "none",
+            "meta-info": {
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1579506577795,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "last-modifier": "System",
+                "creation-time": {
+                    "posix": 1579506577795,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "creator": "System"
+            },
+            "tags": [],
+            "icon": "Actions/actionsAccept",
+            "comments": "Accept",
+            "display-name": "Accept",
+            "customFields": null
+        },
+        {
+            "uid": "97aeb369-9aea-11d5-bd16-0090272ccb30",
+            "name": "Any",
+            "type": "CpmiAnyObject",
+            "domain": {
+                "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+                "name": "Check Point Data",
+                "domain-type": "data domain"
+            },
+            "color": "black",
+            "primaryManagement": false,
+            "meta-info": {
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1579506562518,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "last-modifier": "System",
+                "creation-time": {
+                    "posix": 1579506562518,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "creator": "System"
+            },
+            "tags": [],
+            "icon": "General/globalsAny",
+            "comments": null,
+            "display-name": "Any",
+            "customFields": null
+        },
+        {
+            "uid": "97aeb44f-9aea-11d5-bd16-0090272ccb30",
+            "name": "AOL",
+            "type": "service-tcp",
+            "domain": {
+                "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+                "name": "Check Point Data",
+                "domain-type": "data domain"
+            },
+            "port": "5190",
+            "match-by-protocol-signature": false,
+            "override-default-settings": false,
+            "session-timeout": 3600,
+            "use-default-session-timeout": true,
+            "match-for-any": true,
+            "sync-connections-on-cluster": true,
+            "aggressive-aging": {
+                "enable": true,
+                "timeout": 600,
+                "use-default-timeout": true,
+                "default-timeout": 0
+            },
+            "keep-connections-open-after-policy-installation": false,
+            "groups": [
+                {
+                    "uid": "2c970c2b-84a3-40b5-ab0e-83244dd47bcd",
+                    "name": "AOL_Messenger",
+                    "type": "service-group",
+                    "domain": {
+                        "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+                        "name": "Check Point Data",
+                        "domain-type": "data domain"
+                    },
+                    "members": [
+                        "97aeb44f-9aea-11d5-bd16-0090272ccb30",
+                        "bbec6807-808d-49b7-b8dc-54c5a655d392"
+                    ],
+                    "groups": [
+                        "cd7c1a5f-6268-40b6-a8c7-2727b8036cb1"
+                    ],
+                    "comments": "AOL Instant Messenger. Also used by: ICQ & Apple iChat",
+                    "color": "black",
+                    "icon": "General/group",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1579506572967,
+                            "iso-8601": "2020-01-20T08:49+0100"
+                        },
+                        "last-modifier": "System",
+                        "creation-time": {
+                            "posix": 1579506572967,
+                            "iso-8601": "2020-01-20T08:49+0100"
+                        },
+                        "creator": "System"
+                    },
+                    "read-only": false
+                }
+            ],
+            "comments": "AOL Instant Messenger. Also used by: ICQ & Apple iChat",
+            "color": "red",
+            "icon": "Services/TCPService",
+            "tags": [],
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1579506572430,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "last-modifier": "System",
+                "creation-time": {
+                    "posix": 1579506572430,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "creator": "System"
+            },
+            "read-only": false
+        },
+        {
+            "uid": "96759a8d-aab8-43d9-bbfc-b459ce66ac87",
+            "name": "Backage",
+            "type": "service-tcp",
+            "domain": {
+                "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+                "name": "Check Point Data",
+                "domain-type": "data domain"
+            },
+            "port": "411",
+            "match-by-protocol-signature": false,
+            "override-default-settings": false,
+            "session-timeout": 3600,
+            "use-default-session-timeout": true,
+            "match-for-any": false,
+            "sync-connections-on-cluster": true,
+            "aggressive-aging": {
+                "enable": true,
+                "timeout": 600,
+                "use-default-timeout": true,
+                "default-timeout": 0
+            },
+            "keep-connections-open-after-policy-installation": false,
+            "groups": [
+                {
+                    "uid": "f956089c-6dd8-4ff4-9fb1-e13969cdadff",
+                    "name": "Trojan_Services",
+                    "type": "service-group",
+                    "domain": {
+                        "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+                        "name": "Check Point Data",
+                        "domain-type": "data domain"
+                    },
+                    "members": [
+                        "86077a7d-a8da-4b5b-919c-366fe91ad1da",
+                        "96759a8d-aab8-43d9-bbfc-b459ce66ac87",
+                        "a651f18c-1c7c-4bd2-9ffe-790c29e3ccd9",
+                        "e0c17142-433d-40a7-9eaa-e1d5eba40d2e",
+                        "88aaa643-bf12-4d40-a02d-e98a8159358a",
+                        "c13e3031-02d6-4341-a307-3daf10735078",
+                        "8055b0de-dace-4d18-91f4-f39915b7aba8",
+                        "8d971c42-17de-49a0-a646-a8e0057aebbd",
+                        "08da33ff-bc5f-402a-9865-bee8fee69422",
+                        "81b90130-2a31-45cd-8092-dc492b116ca9",
+                        "82ba0dd2-42e6-472d-8877-57f519175c14",
+                        "c693c8c1-78e3-450d-936e-aa3278190633",
+                        "b8d159dc-aa70-4cc5-9c5a-8c2ad3aa977e",
+                        "ff8ea038-34fd-4b7b-8a8a-8d6bf0a599fe",
+                        "2176f91c-5fb4-4111-98bd-7d5d5b358fe0",
+                        "05647a8c-f0e7-4354-adbd-c685ee7742f0",
+                        "26339b33-1c42-4e49-96e9-55770f6af0ce",
+                        "06233377-3454-489a-b9fb-2f2ca14b895b",
+                        "230b24df-1efa-4a28-b7a4-87dfb79afba7",
+                        "c2f963b0-db3c-42d5-b0f2-a2a7bc0d378d",
+                        "10f56849-2e03-40dd-9cf7-56aee2cfa57f",
+                        "ce29b597-76b9-48aa-ac24-ae7e23c438ed",
+                        "73bfbf75-eb13-42c0-ba69-58b8f026b4d6",
+                        "e43b7817-dbb6-4c74-a95a-c424dc47999c",
+                        "e38e4dea-a610-4416-bf44-6f4e45e95e70",
+                        "aa02e546-80d1-453a-91dc-49f606764451",
+                        "aeaa6c77-e87e-4581-ad73-06417391dfad",
+                        "b236d830-9615-4578-b6e2-b0b44c45fda0",
+                        "d4b1f3b0-c606-4b6b-8118-ee61303f8e19",
+                        "637b7f26-c4b2-4510-872e-5a10de046cb4",
+                        "41c4df08-dbf9-4576-9114-b8f1dc4dc8d7",
+                        "69ca7583-1fd4-4c86-ac1a-680697a9af93",
+                        "e926e948-fae7-4140-8fed-11426b1a32b9",
+                        "cc1d78cc-5fce-4496-a78b-c37aa0622f7a",
+                        "02f708dd-0337-485f-a04b-3b931971b93a",
+                        "16aee006-0f79-407e-b6a4-f3cc5a7a31d5",
+                        "3cf4da8b-576e-47ec-903e-91f155bd0cd9",
+                        "6e745536-b8c9-4df5-bfd5-043e62013956",
+                        "25ac306e-1fc9-4e3e-bf66-4a48473caf3f",
+                        "24de2cde-dfcd-4c9b-9124-492ac4bedba7"
+                    ],
+                    "groups": [],
+                    "comments": "Common ports used by trojan applications.",
+                    "color": "magenta",
+                    "icon": "General/group",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1579506572934,
+                            "iso-8601": "2020-01-20T08:49+0100"
+                        },
+                        "last-modifier": "System",
+                        "creation-time": {
+                            "posix": 1579506572934,
+                            "iso-8601": "2020-01-20T08:49+0100"
+                        },
+                        "creator": "System"
+                    },
+                    "read-only": false
+                }
+            ],
+            "comments": "Backage trojan",
+            "color": "pink",
+            "icon": "Services/TCPService",
+            "tags": [],
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1579506572932,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "last-modifier": "System",
+                "creation-time": {
+                    "posix": 1579506572932,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "creator": "System"
+            },
+            "read-only": false
+        },
+        {
+            "uid": "6c488338-8eec-4103-ad21-cd461ac2c473",
+            "name": "Drop",
+            "type": "RulebaseAction",
+            "domain": {
+                "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+                "name": "Check Point Data",
+                "domain-type": "data domain"
+            },
+            "color": "none",
+            "meta-info": {
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1579506577798,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "last-modifier": "System",
+                "creation-time": {
+                    "posix": 1579506577798,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "creator": "System"
+            },
+            "tags": [],
+            "icon": "Actions/actionsDrop",
+            "comments": "Drop",
+            "display-name": "Drop",
+            "customFields": null
+        },
+        {
+            "uid": "97aeb389-9aea-11d5-bd16-0090272ccb30",
+            "name": "FW1_log",
+            "type": "service-tcp",
+            "domain": {
+                "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+                "name": "Check Point Data",
+                "domain-type": "data domain"
+            },
+            "port": "257",
+            "match-by-protocol-signature": false,
+            "override-default-settings": false,
+            "session-timeout": 3600,
+            "use-default-session-timeout": true,
+            "match-for-any": true,
+            "sync-connections-on-cluster": true,
+            "aggressive-aging": {
+                "enable": true,
+                "timeout": 600,
+                "use-default-timeout": true,
+                "default-timeout": 0
+            },
+            "keep-connections-open-after-policy-installation": false,
+            "groups": [
+                {
+                    "uid": "77c21ea4-9db4-40fe-86e0-58252c3759d8",
+                    "name": "DAIP_Control_services",
+                    "type": "service-group",
+                    "domain": {
+                        "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+                        "name": "Check Point Data",
+                        "domain-type": "data domain"
+                    },
+                    "members": [
+                        "97aeb3ab-9aea-11d5-bd16-0090272ccb30",
+                        "97aeb388-9aea-11d5-bd16-0090272ccb30",
+                        "97aeb3a4-9aea-11d5-bd16-0090272ccb30",
+                        "97aeb389-9aea-11d5-bd16-0090272ccb30"
+                    ],
+                    "groups": [],
+                    "comments": "",
+                    "color": "black",
+                    "icon": "General/group",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1579506572976,
+                            "iso-8601": "2020-01-20T08:49+0100"
+                        },
+                        "last-modifier": "System",
+                        "creation-time": {
+                            "posix": 1579506572976,
+                            "iso-8601": "2020-01-20T08:49+0100"
+                        },
+                        "creator": "System"
+                    },
+                    "read-only": false
+                }
+            ],
+            "comments": "Check Point Security Gateway Logs",
+            "color": "firebrick",
+            "icon": "Services/TCPService",
+            "tags": [],
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1579506570263,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "last-modifier": "System",
+                "creation-time": {
+                    "posix": 1579506570263,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "creator": "System"
+            },
+            "read-only": false
+        },
+        {
+            "uid": "34e7dbcd-5e7c-464d-928b-3340109bbfad",
+            "name": "g_net_10.0.0.0_24",
+            "type": "network",
+            "domain": {
+                "uid": "1e294ce0-367a-11e3-aa6e-0800200c9a66",
+                "name": "Global",
+                "domain-type": "global domain"
+            },
+            "broadcast": "allow",
+            "subnet4": "10.0.0.0",
+            "mask-length4": 24,
+            "subnet-mask": "255.255.255.0",
+            "nat-settings": {
+                "auto-rule": false
+            },
+            "groups": [],
+            "comments": "",
+            "color": "black",
+            "icon": "NetworkObjects/network",
+            "tags": [],
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1608534103085,
+                    "iso-8601": "2020-12-21T08:01+0100"
+                },
+                "last-modifier": "admin",
+                "creation-time": {
+                    "posix": 1608534103085,
+                    "iso-8601": "2020-12-21T08:01+0100"
+                },
+                "creator": "admin"
+            },
+            "read-only": false
+        },
+        {
+            "uid": "15c07f09-c515-41d7-8719-fde0bc96d5c4",
+            "name": "h_10.1.1.1",
+            "type": "host",
+            "domain": {
+                "uid": "1e294ce0-367a-11e3-aa6e-0800200c9a66",
+                "name": "Global",
+                "domain-type": "global domain"
+            },
+            "ipv4-address": "10.1.1.1",
+            "interfaces": [],
+            "nat-settings": {
+                "auto-rule": false
+            },
+            "groups": [],
+            "comments": "",
+            "color": "black",
+            "icon": "Objects/host",
+            "tags": [],
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1608534127238,
+                    "iso-8601": "2020-12-21T08:02+0100"
+                },
+                "last-modifier": "admin",
+                "creation-time": {
+                    "posix": 1608534127238,
+                    "iso-8601": "2020-12-21T08:02+0100"
+                },
+                "creator": "admin"
+            },
+            "read-only": false
+        },
+        {
+            "uid": "598ead32-aa42-4615-90ed-f51a5928d41d",
+            "name": "Log",
+            "type": "Track",
+            "domain": {
+                "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+                "name": "Check Point Data",
+                "domain-type": "data domain"
+            },
+            "color": "none",
+            "meta-info": {
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1579506577636,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "last-modifier": "System",
+                "creation-time": {
+                    "posix": 1579506577636,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "creator": "System"
+            },
+            "tags": [],
+            "icon": "Track/tracksLog",
+            "comments": "Tracks network information and rule matches.",
+            "customFields": null
+        },
+        {
+            "uid": "29e53e3d-23bf-48fe-b6b1-d59bd88036f9",
+            "name": "None",
+            "type": "Track",
+            "domain": {
+                "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+                "name": "Check Point Data",
+                "domain-type": "data domain"
+            },
+            "color": "none",
+            "meta-info": {
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1579506577614,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "last-modifier": "System",
+                "creation-time": {
+                    "posix": 1579506577614,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "creator": "System"
+            },
+            "tags": [],
+            "icon": "General/globalsNone",
+            "comments": "No tracking.",
+            "customFields": null
+        },
+        {
+            "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+            "name": "Policy Targets",
+            "type": "Global",
+            "domain": {
+                "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+                "name": "Check Point Data",
+                "domain-type": "data domain"
+            },
+            "color": "none",
+            "meta-info": {
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1579506577534,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "last-modifier": "System",
+                "creation-time": {
+                    "posix": 1579506577534,
+                    "iso-8601": "2020-01-20T08:49+0100"
+                },
+                "creator": "System"
+            },
+            "tags": [],
+            "icon": "General/globalsAny",
+            "comments": "The policy target gateways",
+            "customFields": null
+        }
+    ],
+    "from": 1,
+    "to": 4,
+    "total": 4
+}

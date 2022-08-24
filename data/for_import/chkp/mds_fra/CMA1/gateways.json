@@ -1,0 +1,48 @@
+{
+    "objects": [
+        {
+            "uid": "4108f2d4-b081-4338-bef2-de15a8b17503",
+            "name": "CMA1_Server",
+            "type": "CpmiHostCkp",
+            "domain": {
+                "uid": "8b0e4294-b2c3-4af9-a047-2a87e5b51aac",
+                "name": "CMA1",
+                "domain-type": "domain"
+            },
+            "policy": {},
+            "operating-system": "Gaia",
+            "hardware": "Open server",
+            "version": "R80.40",
+            "ipv4-address": "10.211.55.21",
+            "network-security-blades": {},
+            "management-blades": {
+                "network-policy-management": true,
+                "logging-and-status": true
+            },
+            "sic-status": "communicating",
+            "tags": [],
+            "icon": "NetworkObjects/CheckPoint/Hosts/xHost_CP",
+            "groups": [],
+            "comments": "Domain Management Server",
+            "color": "black",
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1608531995198,
+                    "iso-8601": "2020-12-21T07:26+0100"
+                },
+                "last-modifier": "System",
+                "creation-time": {
+                    "posix": 1608531966146,
+                    "iso-8601": "2020-12-21T07:26+0100"
+                },
+                "creator": "admin"
+            },
+            "read-only": true
+        }
+    ],
+    "from": 1,
+    "to": 1,
+    "total": 1
+}

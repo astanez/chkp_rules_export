@@ -1,0 +1,89 @@
+{
+    "objects": [
+        {
+            "uid": "3a97a187-f58d-4bed-b623-419aa462a96d",
+            "name": "CMA2_Server",
+            "type": "CpmiHostCkp",
+            "domain": {
+                "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                "name": "CMA2",
+                "domain-type": "domain"
+            },
+            "policy": {},
+            "operating-system": "Gaia",
+            "hardware": "Open server",
+            "version": "R80.40",
+            "ipv4-address": "10.211.55.22",
+            "network-security-blades": {},
+            "management-blades": {
+                "network-policy-management": true,
+                "logging-and-status": true
+            },
+            "sic-status": "communicating",
+            "tags": [],
+            "icon": "NetworkObjects/CheckPoint/Hosts/xHost_CP",
+            "groups": [],
+            "comments": "Domain Management Server",
+            "color": "black",
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1608531616420,
+                    "iso-8601": "2020-12-21T07:20+0100"
+                },
+                "last-modifier": "System",
+                "creation-time": {
+                    "posix": 1608531585504,
+                    "iso-8601": "2020-12-21T07:19+0100"
+                },
+                "creator": "admin"
+            },
+            "read-only": true
+        },
+        {
+            "uid": "4fdad786-828e-41ff-9543-9170acb0e2ad",
+            "name": "hq_gw_r8040",
+            "type": "simple-gateway",
+            "domain": {
+                "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                "name": "CMA2",
+                "domain-type": "domain"
+            },
+            "policy": {},
+            "operating-system": "Gaia",
+            "hardware": "Open server",
+            "version": "R80.40",
+            "ipv4-address": "10.211.55.101",
+            "network-security-blades": {
+                "firewall": true
+            },
+            "management-blades": {},
+            "vpn-encryption-domain": "addresses_behind_gw",
+            "sic-status": "uninitialized",
+            "tags": [],
+            "icon": "NetworkObjects/gateway",
+            "groups": [],
+            "comments": "",
+            "color": "black",
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1608533098715,
+                    "iso-8601": "2020-12-21T07:44+0100"
+                },
+                "last-modifier": "admin",
+                "creation-time": {
+                    "posix": 1608533035593,
+                    "iso-8601": "2020-12-21T07:43+0100"
+                },
+                "creator": "admin"
+            },
+            "read-only": true
+        }
+    ],
+    "from": 1,
+    "to": 2,
+    "total": 2
+}

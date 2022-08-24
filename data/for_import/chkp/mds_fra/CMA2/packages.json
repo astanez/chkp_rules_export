@@ -1,0 +1,745 @@
+{
+    "packages": [
+        {
+            "uid": "a3c096bc-f08b-47c0-a4fd-4b52ed30415f",
+            "name": "DE_Branch_Mun",
+            "type": "package",
+            "domain": {
+                "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                "name": "CMA2",
+                "domain-type": "domain"
+            },
+            "access": true,
+            "access-layers": [
+                {
+                    "uid": "c7ec784c-cdf2-4718-9661-0211c2f42d34",
+                    "name": "DE_Branch_Mun Network",
+                    "type": "access-layer",
+                    "domain": {
+                        "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                        "name": "CMA2",
+                        "domain-type": "domain"
+                    },
+                    "shared": false,
+                    "applications-and-url-filtering": false,
+                    "content-awareness": false,
+                    "mobile-access": false,
+                    "firewall": true,
+                    "implicit-cleanup-action": "drop",
+                    "comments": "",
+                    "color": "black",
+                    "icon": "ApplicationFirewall/rulebase",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1608643574375,
+                            "iso-8601": "2020-12-22T14:26+0100"
+                        },
+                        "last-modifier": "admin",
+                        "creation-time": {
+                            "posix": 1608643574375,
+                            "iso-8601": "2020-12-22T14:26+0100"
+                        },
+                        "creator": "admin"
+                    },
+                    "read-only": false
+                },
+                {
+                    "uid": "9bb9d3a6-4abc-4f1c-9874-998f6336077f",
+                    "name": "Layer_dc_fra",
+                    "type": "access-layer",
+                    "domain": {
+                        "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                        "name": "CMA2",
+                        "domain-type": "domain"
+                    },
+                    "shared": false,
+                    "applications-and-url-filtering": false,
+                    "content-awareness": false,
+                    "mobile-access": false,
+                    "firewall": true,
+                    "implicit-cleanup-action": "drop",
+                    "comments": "",
+                    "color": "black",
+                    "icon": "ApplicationFirewall/rulebase",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1608644238716,
+                            "iso-8601": "2020-12-22T14:37+0100"
+                        },
+                        "last-modifier": "admin",
+                        "creation-time": {
+                            "posix": 1608642900768,
+                            "iso-8601": "2020-12-22T14:15+0100"
+                        },
+                        "creator": "admin"
+                    },
+                    "read-only": false
+                }
+            ],
+            "threat-layers": [
+                {
+                    "uid": "bf0cd81c-b5e6-4d34-a9a5-506d2f973fe8",
+                    "name": "IPS",
+                    "type": "threat-layer",
+                    "domain": {
+                        "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                        "name": "CMA2",
+                        "domain-type": "domain"
+                    },
+                    "ips-layer": true,
+                    "comments": "",
+                    "color": "black",
+                    "icon": "ApplicationFirewall/sharedrulebase",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1608531574406,
+                            "iso-8601": "2020-12-21T07:19+0100"
+                        },
+                        "last-modifier": "System",
+                        "creation-time": {
+                            "posix": 1608531574332,
+                            "iso-8601": "2020-12-21T07:19+0100"
+                        },
+                        "creator": "System"
+                    },
+                    "read-only": false
+                },
+                {
+                    "uid": "c4ffb619-ea11-4234-8a8b-ec3573b6357a",
+                    "name": "DE_Branch_Mun Threat Prevention",
+                    "type": "threat-layer",
+                    "domain": {
+                        "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                        "name": "CMA2",
+                        "domain-type": "domain"
+                    },
+                    "ips-layer": false,
+                    "comments": "",
+                    "color": "black",
+                    "icon": "ApplicationFirewall/rulebase",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1608643574375,
+                            "iso-8601": "2020-12-22T14:26+0100"
+                        },
+                        "last-modifier": "admin",
+                        "creation-time": {
+                            "posix": 1608643574375,
+                            "iso-8601": "2020-12-22T14:26+0100"
+                        },
+                        "creator": "admin"
+                    },
+                    "read-only": false
+                }
+            ],
+            "vpn-traditional-mode": false,
+            "nat-policy": true,
+            "qos": false,
+            "qos-policy-type": "recommended",
+            "desktop-security": false,
+            "threat-prevention": true,
+            "installation-targets": "all",
+            "https-inspection-policy": true,
+            "https-inspection-layer": {
+                "uid": "af8dff66-b384-429b-af93-57a3eea03001",
+                "name": "Default Layer",
+                "type": "https-layer",
+                "domain": {
+                    "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                    "name": "CMA2",
+                    "domain-type": "domain"
+                },
+                "shared": true,
+                "comments": "",
+                "color": "black",
+                "icon": "ApplicationFirewall/rulebase",
+                "tags": [],
+                "meta-info": {
+                    "lock": "unlocked",
+                    "validation-state": "ok",
+                    "last-modify-time": {
+                        "posix": 1608531574747,
+                        "iso-8601": "2020-12-21T07:19+0100"
+                    },
+                    "last-modifier": "System",
+                    "creation-time": {
+                        "posix": 1608531574537,
+                        "iso-8601": "2020-12-21T07:19+0100"
+                    },
+                    "creator": "System"
+                },
+                "read-only": false
+            },
+            "comments": "zones: Zone_DE_Branch_Mun,DE_Branch_Rosenheim",
+            "color": "black",
+            "icon": "Blades/Access",
+            "tags": [],
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1610172647734,
+                    "iso-8601": "2021-01-09T07:10+0100"
+                },
+                "last-modifier": "admin",
+                "creation-time": {
+                    "posix": 1608643574375,
+                    "iso-8601": "2020-12-22T14:26+0100"
+                },
+                "creator": "admin"
+            },
+            "read-only": false
+        },
+        {
+            "uid": "0a520575-e687-482c-ac3e-673762ab5e60",
+            "name": "HQ_Fra",
+            "type": "package",
+            "domain": {
+                "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                "name": "CMA2",
+                "domain-type": "domain"
+            },
+            "access": true,
+            "access-layers": [
+                {
+                    "uid": "aaa383d1-2dcc-4e9e-a91a-44859455814a",
+                    "name": "HQ_Fra Network",
+                    "type": "access-layer",
+                    "domain": {
+                        "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                        "name": "CMA2",
+                        "domain-type": "domain"
+                    },
+                    "shared": false,
+                    "applications-and-url-filtering": false,
+                    "content-awareness": false,
+                    "mobile-access": false,
+                    "firewall": true,
+                    "implicit-cleanup-action": "drop",
+                    "comments": "",
+                    "color": "black",
+                    "icon": "ApplicationFirewall/rulebase",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1608531808987,
+                            "iso-8601": "2020-12-21T07:23+0100"
+                        },
+                        "last-modifier": "automation_user",
+                        "creation-time": {
+                            "posix": 1608531808987,
+                            "iso-8601": "2020-12-21T07:23+0100"
+                        },
+                        "creator": "automation_user"
+                    },
+                    "read-only": false
+                }
+            ],
+            "vpn-traditional-mode": false,
+            "nat-policy": true,
+            "qos": false,
+            "qos-policy-type": "recommended",
+            "desktop-security": false,
+            "threat-prevention": false,
+            "installation-targets": [
+                {
+                    "uid": "4fdad786-828e-41ff-9543-9170acb0e2ad",
+                    "name": "hq_gw_r8040",
+                    "type": "simple-gateway",
+                    "domain": {
+                        "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                        "name": "CMA2",
+                        "domain-type": "domain"
+                    },
+                    "interfaces": [],
+                    "ipv4-address": "10.211.55.101",
+                    "dynamic-ip": false,
+                    "version": "R80.40",
+                    "os-name": "Gaia",
+                    "hardware": "Open server",
+                    "sic-name": "",
+                    "sic-state": "uninitialized",
+                    "firewall": true,
+                    "firewall-settings": {
+                        "auto-maximum-limit-for-concurrent-connections": true,
+                        "maximum-limit-for-concurrent-connections": 25000,
+                        "auto-calculate-connections-hash-table-size-and-memory-pool": true,
+                        "connections-hash-size": 131072,
+                        "memory-pool-size": 6,
+                        "maximum-memory-pool-size": 30
+                    },
+                    "vpn": false,
+                    "application-control": false,
+                    "url-filtering": false,
+                    "ips": false,
+                    "content-awareness": false,
+                    "anti-bot": false,
+                    "anti-virus": false,
+                    "threat-emulation": false,
+                    "threat-extraction": false,
+                    "save-logs-locally": false,
+                    "send-alerts-to-server": [
+                        "CMA2_Server"
+                    ],
+                    "send-logs-to-server": [
+                        "CMA2_Server"
+                    ],
+                    "send-logs-to-backup-server": [],
+                    "logs-settings": {
+                        "rotate-log-by-file-size": false,
+                        "rotate-log-file-size-threshold": 1000,
+                        "rotate-log-on-schedule": false,
+                        "alert-when-free-disk-space-below-metrics": "mbytes",
+                        "alert-when-free-disk-space-below": true,
+                        "alert-when-free-disk-space-below-threshold": 20,
+                        "alert-when-free-disk-space-below-type": "popup alert",
+                        "delete-when-free-disk-space-below-metrics": "mbytes",
+                        "delete-when-free-disk-space-below": true,
+                        "delete-when-free-disk-space-below-threshold": 5000,
+                        "before-delete-keep-logs-from-the-last-days": false,
+                        "before-delete-keep-logs-from-the-last-days-threshold": 3664,
+                        "before-delete-run-script": false,
+                        "before-delete-run-script-command": "",
+                        "stop-logging-when-free-disk-space-below-metrics": "mbytes",
+                        "stop-logging-when-free-disk-space-below": false,
+                        "stop-logging-when-free-disk-space-below-threshold": 100,
+                        "reject-connections-when-free-disk-space-below-threshold": false,
+                        "reserve-for-packet-capture-metrics": "mbytes",
+                        "reserve-for-packet-capture-threshold": 500,
+                        "delete-index-files-when-index-size-above-metrics": "mbytes",
+                        "delete-index-files-when-index-size-above": false,
+                        "delete-index-files-when-index-size-above-threshold": 100000,
+                        "delete-index-files-older-than-days": false,
+                        "delete-index-files-older-than-days-threshold": 14,
+                        "forward-logs-to-log-server": false,
+                        "perform-log-rotate-before-log-forwarding": false,
+                        "update-account-log-every": 3600,
+                        "detect-new-citrix-ica-application-names": false,
+                        "turn-on-qos-logging": true
+                    },
+                    "groups": [],
+                    "comments": "",
+                    "color": "black",
+                    "icon": "NetworkObjects/gateway",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1608533098715,
+                            "iso-8601": "2020-12-21T07:44+0100"
+                        },
+                        "last-modifier": "admin",
+                        "creation-time": {
+                            "posix": 1608533035593,
+                            "iso-8601": "2020-12-21T07:43+0100"
+                        },
+                        "creator": "admin"
+                    },
+                    "read-only": false
+                }
+            ],
+            "https-inspection-policy": true,
+            "https-inspection-layer": {
+                "uid": "af8dff66-b384-429b-af93-57a3eea03001",
+                "name": "Default Layer",
+                "type": "https-layer",
+                "domain": {
+                    "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                    "name": "CMA2",
+                    "domain-type": "domain"
+                },
+                "shared": true,
+                "comments": "",
+                "color": "black",
+                "icon": "ApplicationFirewall/rulebase",
+                "tags": [],
+                "meta-info": {
+                    "lock": "unlocked",
+                    "validation-state": "ok",
+                    "last-modify-time": {
+                        "posix": 1608531574747,
+                        "iso-8601": "2020-12-21T07:19+0100"
+                    },
+                    "last-modifier": "System",
+                    "creation-time": {
+                        "posix": 1608531574537,
+                        "iso-8601": "2020-12-21T07:19+0100"
+                    },
+                    "creator": "System"
+                },
+                "read-only": false
+            },
+            "comments": "zones: Zone_HQ_Fra",
+            "color": "orange",
+            "icon": "Blades/Access",
+            "tags": [],
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1610172599118,
+                    "iso-8601": "2021-01-09T07:09+0100"
+                },
+                "last-modifier": "admin",
+                "creation-time": {
+                    "posix": 1608531808987,
+                    "iso-8601": "2020-12-21T07:23+0100"
+                },
+                "creator": "automation_user"
+            },
+            "read-only": false
+        },
+        {
+            "uid": "fb17e888-fea6-4aa2-95b8-021b4e078a17",
+            "name": "Standard",
+            "type": "package",
+            "domain": {
+                "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                "name": "CMA2",
+                "domain-type": "domain"
+            },
+            "access": true,
+            "access-layers": [
+                {
+                    "uid": "a9ae8069-830f-436c-8691-2954a8a9c92e",
+                    "name": "Network",
+                    "type": "access-layer",
+                    "domain": {
+                        "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                        "name": "CMA2",
+                        "domain-type": "domain"
+                    },
+                    "shared": false,
+                    "applications-and-url-filtering": false,
+                    "content-awareness": false,
+                    "mobile-access": false,
+                    "firewall": true,
+                    "implicit-cleanup-action": "drop",
+                    "comments": "",
+                    "color": "black",
+                    "icon": "ApplicationFirewall/rulebase",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1608531572831,
+                            "iso-8601": "2020-12-21T07:19+0100"
+                        },
+                        "last-modifier": "System",
+                        "creation-time": {
+                            "posix": 1608531572785,
+                            "iso-8601": "2020-12-21T07:19+0100"
+                        },
+                        "creator": "System"
+                    },
+                    "read-only": false
+                }
+            ],
+            "threat-layers": [
+                {
+                    "uid": "bf0cd81c-b5e6-4d34-a9a5-506d2f973fe8",
+                    "name": "IPS",
+                    "type": "threat-layer",
+                    "domain": {
+                        "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                        "name": "CMA2",
+                        "domain-type": "domain"
+                    },
+                    "ips-layer": true,
+                    "comments": "",
+                    "color": "black",
+                    "icon": "ApplicationFirewall/sharedrulebase",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1608531574406,
+                            "iso-8601": "2020-12-21T07:19+0100"
+                        },
+                        "last-modifier": "System",
+                        "creation-time": {
+                            "posix": 1608531574332,
+                            "iso-8601": "2020-12-21T07:19+0100"
+                        },
+                        "creator": "System"
+                    },
+                    "read-only": false
+                },
+                {
+                    "uid": "b567bf5b-5b35-4fa2-b30e-314359016678",
+                    "name": "Standard Threat Prevention",
+                    "type": "threat-layer",
+                    "domain": {
+                        "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                        "name": "CMA2",
+                        "domain-type": "domain"
+                    },
+                    "ips-layer": false,
+                    "comments": "",
+                    "color": "black",
+                    "icon": "ApplicationFirewall/rulebase",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1608531574438,
+                            "iso-8601": "2020-12-21T07:19+0100"
+                        },
+                        "last-modifier": "System",
+                        "creation-time": {
+                            "posix": 1608531573753,
+                            "iso-8601": "2020-12-21T07:19+0100"
+                        },
+                        "creator": "System"
+                    },
+                    "read-only": false
+                }
+            ],
+            "vpn-traditional-mode": false,
+            "nat-policy": true,
+            "qos": false,
+            "qos-policy-type": "recommended",
+            "desktop-security": false,
+            "threat-prevention": true,
+            "installation-targets": "all",
+            "https-inspection-policy": true,
+            "https-inspection-layer": {
+                "uid": "af8dff66-b384-429b-af93-57a3eea03001",
+                "name": "Default Layer",
+                "type": "https-layer",
+                "domain": {
+                    "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                    "name": "CMA2",
+                    "domain-type": "domain"
+                },
+                "shared": true,
+                "comments": "",
+                "color": "black",
+                "icon": "ApplicationFirewall/rulebase",
+                "tags": [],
+                "meta-info": {
+                    "lock": "unlocked",
+                    "validation-state": "ok",
+                    "last-modify-time": {
+                        "posix": 1608531574747,
+                        "iso-8601": "2020-12-21T07:19+0100"
+                    },
+                    "last-modifier": "System",
+                    "creation-time": {
+                        "posix": 1608531574537,
+                        "iso-8601": "2020-12-21T07:19+0100"
+                    },
+                    "creator": "System"
+                },
+                "read-only": false
+            },
+            "comments": "",
+            "color": "black",
+            "icon": "Blades/Access",
+            "tags": [],
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1608531572736,
+                    "iso-8601": "2020-12-21T07:19+0100"
+                },
+                "last-modifier": "System",
+                "creation-time": {
+                    "posix": 1608531572736,
+                    "iso-8601": "2020-12-21T07:19+0100"
+                },
+                "creator": "System"
+            },
+            "read-only": false
+        },
+        {
+            "uid": "39b8bbcb-20e8-4a23-be74-327760a54fd4",
+            "name": "UK_Branch",
+            "type": "package",
+            "domain": {
+                "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                "name": "CMA2",
+                "domain-type": "domain"
+            },
+            "access": true,
+            "access-layers": [
+                {
+                    "uid": "5b5ae1ef-aabd-4256-8c8c-98375497ccaa",
+                    "name": "UK_Branch Network",
+                    "type": "access-layer",
+                    "domain": {
+                        "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                        "name": "CMA2",
+                        "domain-type": "domain"
+                    },
+                    "shared": false,
+                    "applications-and-url-filtering": false,
+                    "content-awareness": false,
+                    "mobile-access": false,
+                    "firewall": true,
+                    "implicit-cleanup-action": "drop",
+                    "comments": "",
+                    "color": "black",
+                    "icon": "ApplicationFirewall/rulebase",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1608643992558,
+                            "iso-8601": "2020-12-22T14:33+0100"
+                        },
+                        "last-modifier": "admin",
+                        "creation-time": {
+                            "posix": 1608531811940,
+                            "iso-8601": "2020-12-21T07:23+0100"
+                        },
+                        "creator": "automation_user"
+                    },
+                    "read-only": false
+                }
+            ],
+            "threat-layers": [
+                {
+                    "uid": "bf0cd81c-b5e6-4d34-a9a5-506d2f973fe8",
+                    "name": "IPS",
+                    "type": "threat-layer",
+                    "domain": {
+                        "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                        "name": "CMA2",
+                        "domain-type": "domain"
+                    },
+                    "ips-layer": true,
+                    "comments": "",
+                    "color": "black",
+                    "icon": "ApplicationFirewall/sharedrulebase",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1608531574406,
+                            "iso-8601": "2020-12-21T07:19+0100"
+                        },
+                        "last-modifier": "System",
+                        "creation-time": {
+                            "posix": 1608531574332,
+                            "iso-8601": "2020-12-21T07:19+0100"
+                        },
+                        "creator": "System"
+                    },
+                    "read-only": false
+                },
+                {
+                    "uid": "c697cdd8-3a67-47d4-8143-f1269f3ea297",
+                    "name": "UK_Branch Threat Prevention",
+                    "type": "threat-layer",
+                    "domain": {
+                        "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                        "name": "CMA2",
+                        "domain-type": "domain"
+                    },
+                    "ips-layer": false,
+                    "comments": "",
+                    "color": "black",
+                    "icon": "ApplicationFirewall/rulebase",
+                    "tags": [],
+                    "meta-info": {
+                        "lock": "unlocked",
+                        "validation-state": "ok",
+                        "last-modify-time": {
+                            "posix": 1610164326950,
+                            "iso-8601": "2021-01-09T04:52+0100"
+                        },
+                        "last-modifier": "admin",
+                        "creation-time": {
+                            "posix": 1610164326950,
+                            "iso-8601": "2021-01-09T04:52+0100"
+                        },
+                        "creator": "admin"
+                    },
+                    "read-only": false
+                }
+            ],
+            "vpn-traditional-mode": false,
+            "nat-policy": true,
+            "qos": false,
+            "qos-policy-type": "recommended",
+            "desktop-security": false,
+            "threat-prevention": true,
+            "installation-targets": "all",
+            "https-inspection-policy": true,
+            "https-inspection-layer": {
+                "uid": "af8dff66-b384-429b-af93-57a3eea03001",
+                "name": "Default Layer",
+                "type": "https-layer",
+                "domain": {
+                    "uid": "c059cdfa-bc08-492c-8d0e-d960a7fc446e",
+                    "name": "CMA2",
+                    "domain-type": "domain"
+                },
+                "shared": true,
+                "comments": "",
+                "color": "black",
+                "icon": "ApplicationFirewall/rulebase",
+                "tags": [],
+                "meta-info": {
+                    "lock": "unlocked",
+                    "validation-state": "ok",
+                    "last-modify-time": {
+                        "posix": 1608531574747,
+                        "iso-8601": "2020-12-21T07:19+0100"
+                    },
+                    "last-modifier": "System",
+                    "creation-time": {
+                        "posix": 1608531574537,
+                        "iso-8601": "2020-12-21T07:19+0100"
+                    },
+                    "creator": "System"
+                },
+                "read-only": false
+            },
+            "comments": "zones: Zone_UK_Branch",
+            "color": "orange",
+            "icon": "Blades/Access",
+            "tags": [],
+            "meta-info": {
+                "lock": "unlocked",
+                "validation-state": "ok",
+                "last-modify-time": {
+                    "posix": 1610172663034,
+                    "iso-8601": "2021-01-09T07:11+0100"
+                },
+                "last-modifier": "admin",
+                "creation-time": {
+                    "posix": 1608531811940,
+                    "iso-8601": "2020-12-21T07:23+0100"
+                },
+                "creator": "automation_user"
+            },
+            "read-only": false
+        }
+    ],
+    "from": 1,
+    "to": 4,
+    "total": 4
+}
